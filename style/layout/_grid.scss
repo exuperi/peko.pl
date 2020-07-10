@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 4rem 14rem;
+}
+
+.col-1-of-2 {
+    flex-basis: 45%;
+    margin: 0 calc($grid-gqp / 2);
+}
