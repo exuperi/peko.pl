@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Myriad Pro";
-  src: url(../../shared/fonts/MYRIADPRO-REGULAR.OTF) format("opentype"); }
+  src: url(../shared/fonts/MYRIADPRO-REGULAR.OTF) format("opentype"); }
 
 body {
   font-family: "Myriad Pro", sans-serif;
@@ -55,7 +55,7 @@ html {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../shared/img/Czajnik.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../shared/img/Czajnik.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
