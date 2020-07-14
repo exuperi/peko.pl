@@ -12,7 +12,7 @@
 	background-size: cover;
 	background-position: bottom;
 	color: $color-white;
-	padding-top: 10rem;
+	padding-top: 8rem;
 	position: relative;
 
 	&__nav {
@@ -22,6 +22,7 @@
 		width: 80%;
 		margin: 0 auto;
 		text-transform: uppercase;
+		color: $color-white;
 	}
 
 	&__logo {
@@ -41,6 +42,10 @@
 
 		&-element {
 		}
+
+		@include respond(tab-port) {
+			display: none;
+		}
 	}
 
 	&__title {
@@ -53,6 +58,14 @@
 		span {
 			font-size: 5.5rem;
 			text-transform: uppercase;
+		}
+
+		@include respond(phone) {
+			font-size: 2.5rem;
+
+			span {
+				font-size: 3rem;
+			}
 		}
 	}
 }
@@ -83,6 +96,15 @@
 		font-weight: 600;
 		font-size: 2rem;
 		text-align: center;
+	}
+
+	@include respond(phone) {
+		flex-direction: column;
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 5rem;
+			}
+		}
 	}
 }
 
@@ -139,7 +161,7 @@
 	color: $color-light;
 	&__title {
     font-size: 5rem;
-    margin: 1.7rem 0;
+	margin: 1.7rem 0;
   }
 
   &__contact-info {
@@ -150,11 +172,22 @@
 
   &__open-time {
     line-height: 2;
-    margin-bottom: 5rem;
   }
   
   & > * {
     text-align: center;
   }
+
+  &__socials {
+
+	&-icon {
+		width: 5rem;
+		height: 5rem;
+		margin: 2rem;
+	}
+
+  }
 }
+
+
 

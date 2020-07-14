@@ -15,7 +15,7 @@ a {
   backface-visibility: hidden; }
   a:link, a:visited {
     text-decoration: none;
-    color: #fff; }
+    color: inherit; }
   a:hover {
     transform: translateY(-2px); }
 
@@ -39,6 +39,15 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 60%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 57.5%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 .img-composition {
   display: flex;
@@ -51,7 +60,73 @@ html {
     .img-composition__item img {
       width: 100%;
       height: 100%;
-      border-radius: 3px; }
+      border-radius: .3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .img-composition__item {
+        flex: 0 0 100%;
+        margin: 2rem 0; } }
+
+.hamburger {
+  width: 0;
+  opacity: 0;
+  flex: 0 0 0;
+  display: flex;
+  justify-content: flex-end; }
+  .hamburger input {
+    display: none; }
+  .hamburger input:checked .hamburger {
+    flex: 0 0 50%; }
+  .hamburger input:checked ~ .hamburger__navigation {
+    transform: translateX(0) scale(1); }
+  .hamburger input:checked + label .hamburger__line {
+    background-color: transparent; }
+    .hamburger input:checked + label .hamburger__line:after {
+      transform: rotate(135deg);
+      top: -1rem; }
+    .hamburger input:checked + label .hamburger__line:before {
+      transform: rotate(45deg); }
+  @media only screen and (max-width: 56.25em) {
+    .hamburger {
+      opacity: 1;
+      width: 100%; } }
+  .hamburger__navigation {
+    list-style-type: none;
+    background-color: #212121;
+    width: 100%;
+    height: 95vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(100%) scale(0);
+    transform-origin: right;
+    transition: transform .5s ease;
+    font-size: 3rem;
+    display: flex; }
+    .hamburger__navigation-element {
+      margin: 2rem; }
+  .hamburger__line {
+    width: 4rem;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1000;
+    transition: all .3s; }
+    .hamburger__line::after, .hamburger__line::before {
+      content: '';
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      left: 0;
+      background-color: #fff;
+      transition: inherit; }
+    .hamburger__line:after {
+      top: 1rem; }
+    .hamburger__line:before {
+      top: -1rem; }
 
 .header {
   height: 95vh;
@@ -60,7 +135,7 @@ html {
   background-size: cover;
   background-position: bottom;
   color: #fff;
-  padding-top: 10rem;
+  padding-top: 8rem;
   position: relative; }
   .header__nav {
     display: flex;
@@ -68,7 +143,8 @@ html {
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #fff; }
   .header__logo {
     font-size: 3rem;
     letter-spacing: 0.6rem;
@@ -81,6 +157,9 @@ html {
     flex: 0 0 50%;
     font-size: 2rem;
     letter-spacing: 0.35rem; }
+    @media only screen and (max-width: 56.25em) {
+      .header__navigation {
+        display: none; } }
   .header__title {
     position: absolute;
     top: 50%;
@@ -93,6 +172,11 @@ html {
     .header__title span {
       font-size: 5.5rem;
       text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .header__title {
+        font-size: 2.5rem; }
+        .header__title span {
+          font-size: 3rem; } }
 
 .about-us-section {
   margin-top: 10rem;
@@ -114,6 +198,11 @@ html {
     font-weight: 600;
     font-size: 2rem;
     text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .short-info {
+      flex-direction: column; }
+      .short-info__item:not(:last-child) {
+        margin-bottom: 5rem; } }
 
 .description {
   width: 70%;
@@ -157,7 +246,10 @@ html {
     line-height: 1.3;
     margin-bottom: 1.7rem; }
   .footer__open-time {
-    line-height: 2;
-    margin-bottom: 5rem; }
+    line-height: 2; }
   .footer > * {
     text-align: center; }
+  .footer__socials-icon {
+    width: 5rem;
+    height: 5rem;
+    margin: 2rem; }
