@@ -1,80 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Mansalva|Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Peko Peko - restauracja japońskiej kuchni!</title>
-</head>
-<body>
-    <main class="main" id="main">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Peko Peko - restauracja japońskiej kuchni!</title>
+	</head>
+	<body>
+		<!-- HEADER SECTION-->
+		<header class="header">
+			<nav class="header__nav">
+				<div class="header__logo">Peko Peko</div>
+				<ul class="header__navigation">
+					<li class="header__navigation-element">
+						<a href="#">O restauracji</a>
+					</li>
+					<li class="header__navigation-element"><a href="#">Menu</a></li>
+					<li class="header__navigation-element"><a href="#">Kontakt</a></li>
+				</ul>
+			</nav>
+			<h1 class="header__title heading-primary">
+				Kuchnia Japońska<br /><span>Peko peko</span>
+			</h1>
+		</header>
 
-        <!-- NAVIGATION PANEL -->
-        <nav class="nav">
-            <h3 class="nav__title"><a class="nav__title" href="#main">Peko Peko</a></h3>
-            <ul class="nav__panel">
-                <li class="nav__element"><a href="#about-page" class="nav__link">O NAS</a></li>
-                <li class="nav__element"><a href="#menu-page" class="nav__link">MENU</a></li>
-                <li class="nav__element"><a href="#" class="nav__link">GALERIE</a></li>
-                <li class="nav__contact"><a href="#" class="nav__link">KONTAKT/REZERWACJE</a></li>
-            </ul>
-            <div class="nav__hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>   
-        </nav>
+		<!-- ABOUIT US SECTION -->
+		<section class="about-us-section">
+			<div class="short-info">
+				<div class="short-info__item">
+					<div class="short-info__icon">
+						<img src="./shared/icons/location.svg" alt="Location icon" />
+					</div>
+					<div class="short-info__text">
+						Emilii Plater 13,<br />
+						00-669 Warszawa
+					</div>
+				</div>
+				<div class="short-info__item">
+					<div class="short-info__icon">
+						<img src="./shared/icons/phone.svg" alt="Location icon" />
+					</div>
+					<div class="short-info__text">Telefon:<br />+48 572 213 775</div>
+				</div>
+				<div class="short-info__item">
+					<div class="short-info__icon">
+						<img src="./shared/icons/clock.svg" alt="Location icon" />
+					</div>
+					<div class="short-info__text">Otwarci:<br />12:00-21:00</div>
+				</div>
+			</div>
+			<p class="description paragraph u-margin-top-large">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+				voluptate pariatur molestiae veniam asperiores. Laudantium modi, nulla,
+				reprehenderit amet, sapiente odio blanditiis tempore rem doloribus ullam
+				sed sunt odit est? Lorem ipsum dolor sit amet consectetur adipisicing
+				elit. Eius debitis, repudiandae nulla est ipsam labore vitae delectus
+				totam aperiam accusantium perspiciatis distinctio molestias expedita
+				adipisci, corporis reiciendis neque. Quisquam, soluta.
+			</p>
+			<div class="img-composition u-margin-top-large">
+				<div class="img-composition__item img-composition__item--p1">
+					<img src="./shared/img/inside_pretty.JPG" alt="Inside picture" />
+				</div>
+				<div class="img-composition__item img-composition__item--p2">
+					<img src="./shared/img/inside_3.JPG" alt="Inside picture" />
+				</div>
+				<div class="img-composition__item img-composition__item--p3">
+					<img src="./shared/img/inside_2.JPG" alt="Inside picture" />
+				</div>
+				<div class="img-composition__item img-composition__item--p4">
+					<img src="./shared/img/inside_pretty.JPG" alt="Inside picture" />
+				</div>
+			</div>
+		</section>
 
-        <!-- MAIN IMAGE -->
-        <section class="first-page">
-            <div class="first-page__text">
-                <!-- <span class="first-page__title"> Peko Peko</span> -->
-                <p class="first-page__description">
-                    Najbardziej autentyczne miejsce na kuchnię japońską w środku Warszawy
-                </p>
-            </div>
-        </section>
+		<!-- MENU SECTION -->
+		<section class="menu-section">
+			<div class="menu">
+				<h2 class="menu__title heading-secondary">Menu</h2>
+				<div class="menu__picture">
+					<img src="./shared/img/menu.png" alt="Menu" />
+				</div>
+			</div>
+		</section>
 
-        <!-- ABOUT SECTION-->
-        <section class="about-page" id="about-page">
-            <h2 class="about-page__title heading-secondary">O nas</h2>
-            <div class="about-page__content">
-                <div class="row u-margin-bottom-large">
-                    <div class="about-page__pictures--left pictures-composition col-1-of-2">
-                        <img src="./img/Obraz.jpg" alt="" class="pictures-composition--p1">
-                        <img src="./img/Kwiatki.jpg" alt="" class="pictures-composition--p2">
-                    </div>
-                    <div class="about-page__text about-page__text--right col-1-of-2">
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, praesentium, reiciendis veniam exercitationem, quidem esse cumque animi molestiae dolorem recusandae sapiente pariatur? Ut blanditiis sed quasi esse et atque amet!
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-page__text about-page__text--left col-1-of-2">
-                        <p class="paragraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, praesentium, reiciendis veniam exercitationem, quidem esse cumque animi molestiae dolorem recusandae sapiente pariatur? Ut blanditiis sed quasi esse et atque amet!
-                        </p>
-                    </div>
-                    <div class="about-page__pictures--right pictures-composition col-1-of-2 u-minus-top-large">
-                        <img src="./img/inside_2.JPG" alt="" class="pictures-composition--p1">
-                        <img src="./img/inside_pretty.JPG" alt="" class="pictures-composition--p2">
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- MAP SECTION -->
+		<section class="map-section">
+			<iframe
+				class="map"
+				width="600"
+				height="500"
+				id="gmap_canvas"
+				src="https://maps.google.com/maps?q=warsaw%20emilii%20plater%2013&t=&z=13&ie=UTF8&iwloc=&output=embed"
+				frameborder="0"
+				scrolling="no"
+				marginheight="0"
+				marginwidth="0"
+			></iframe>
+		</section>
 
-        <!-- MENU SECTION -->
-        <section class="menu-page" id="menu-page">
-            <h2 class="menu-page__title heading-secondary"> MENU </h2>
-            <img src="img/menu-img.jpg" class="menu-page__menu">
-            <a href="img/menu.pdf" download class="menu-page__download-link">Pobierz</a>
-        </section>
-    </main>
+		<!-- FOOTER SECTION -->
+		<footer class="footer">
+			<div class="footer__title heading-secondary">Kontakt</div>
+			<div class="footer__contact-info">
+				<a href="tel:+48 572 213 775">+48 572 213 775</a> <br />
+				Emilii Plater 13, 00-669 Warszawa
+			</div>
+			<div class="footer__open-time">
+				Godziny otwarcia:<br />
+				Poniedziałek: Zamknięte<br />
+				Wtorek: 12:00-21:00<br />
+				Środa: 12:00-21:00<br />
+				Czwartek: 12:00-21:00<br />
+				Piątek: 12:00-21:00<br />
+				Sobota: 12:00-21:00<br />
+				Niedziela: 12:00-20:00
+			</div>
+		</footer>
 
-    <script src="js/index.js"></script>
-</body>
+		<script src="js/index.js"></script>
+	</body>
 </html>
