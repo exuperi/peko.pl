@@ -1,31 +1,39 @@
 {
-  "name": "peko.pl",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass style/style.scss style/style.css -w"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drozds/peko.pl.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/drozds/peko.pl/issues"
-  },
-  "homepage": "https://github.com/drozds/peko.pl#readme",
-  "devDependencies": {
-    "aos": "^2.3.4",
-    "node-sass": "^4.12.0",
-    "sass": "^1.23.0"
-  },
-  "dependencies": {
-    "css-loader": "^3.2.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0"
-  }
+	"name": "peko.pl",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch:sass": "node-sass style/style.scss style/style.css -w",
+		"compile:sass": "node-sass style/style.scss style/style.comp.css",
+		"prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" style/style.comp.css -o style/style.prefix.css",
+		"compress:css": "node-sass style/style.prefix.css style/style.css --output-style compressed",
+		"build:css": "npm-run-all compile:sass prefix:css compress:css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/drozds/peko.pl.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/drozds/peko.pl/issues"
+	},
+	"homepage": "https://github.com/drozds/peko.pl#readme",
+	"devDependencies": {
+		"aos": "^2.3.4",
+		"autoprefixer": "^9.8.5",
+		"node-sass": "^4.12.0",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^7.0.32",
+		"postcss-cli": "^7.1.1",
+		"sass": "^1.23.0"
+	},
+	"dependencies": {
+		"css-loader": "^3.2.0",
+		"sass-loader": "^8.0.0",
+		"style-loader": "^1.0.0"
+	}
 }
