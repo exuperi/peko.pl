@@ -6,13 +6,17 @@
 		<meta name="description" content="" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-		<link rel="stylesheet" href="../style/style.css" />
+		<link rel="stylesheet" href="./style/style.css" />
 		<title>Peko Peko - ресторан японской кухни!</title>
 	</head>
 	<body>
 		<div class="switch-languages">
-			<a href="../en/index.html"><img src="../shared/icons/uk.svg" alt="English version"></a>
-			<a href="../index.html"><img src="../shared/icons/pl.svg" alt="Polish version"></a>
+			<a href="EN.html"
+				><img src="./shared/icons/uk.svg" alt="English version"
+			/></a>
+			<a href="./index.html"
+				><img src="./shared/icons/pl.svg" alt="Polish version"
+			/></a>
 		</div>
 
 		<div class="scroll-up">
@@ -68,7 +72,7 @@
 			<div class="short-info">
 				<div data-aos="zoom-in" class="short-info__item">
 					<div class="short-info__icon">
-						<img src="../shared/icons/location.svg" alt="Location icon" />
+						<img src="./shared/icons/location.svg" alt="Location icon" />
 					</div>
 					<div class="short-info__text">
 						Emilii Plater 13,<br />
@@ -77,7 +81,7 @@
 				</div>
 				<div data-aos="zoom-in" class="short-info__item">
 					<div class="short-info__icon">
-						<img src="../shared/icons/phone.svg" alt="Location icon" />
+						<img src="./shared/icons/phone.svg" alt="Location icon" />
 					</div>
 					<div class="short-info__text">
 						Телефон:<br /><a href="tel:+48 572 213 775">+48 572 213 775</a>
@@ -85,7 +89,7 @@
 				</div>
 				<div data-aos="zoom-in" class="short-info__item">
 					<div class="short-info__icon">
-						<img src="../shared/icons/clock.svg" alt="Location icon" />
+						<img src="./shared/icons/clock.svg" alt="Location icon" />
 					</div>
 					<div class="short-info__text">Мы открыты:<br />12:00-21:00</div>
 				</div>
@@ -102,36 +106,55 @@
 			<div class="img-composition u-margin-top-large">
 				<div class="img-composition__item img-composition__item--p1">
 					<img
-						src="../shared/img/inside_pretty.JPG"
-						data-aos="fade-right"
-						data-aos-duration="1500"
+						srcset="
+							./shared/img/inside_pretty-sm.JPG  600w,
+							./shared/img/inside_pretty-lg.JPG 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
 						alt="Inside picture"
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+						src="./shared/img/inside_pretty-lg.JPG"
 					/>
 				</div>
 				<div class="img-composition__item img-composition__item--p2">
 					<img
-						src="../shared/img/karaage1.jpg"
-						data-aos="fade-left"
+						srcset="
+							./shared/img/karaage-lg.jpg  600w,
+							./shared/img/karaage-lg.jpg 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
+						alt="Karaage"
+						data-aos="zoom-in"
 						data-aos-duration="1500"
-						alt="Inside picture"
+						src="./shared/img/karaage-lg.jpg"
 					/>
 				</div>
 				<div class="img-composition__item img-composition__item--p3">
 					<img
-						src="../shared/img/pudding4.jpg"
-						data-aos="fade-right"
-						alt="Inside picture"
+						srcset="
+							./shared/img/pudding-sm.jpg  600w,
+							./shared/img/pudding-lg.jpg 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
+						alt="Puddding"
+						data-aos="zoom-in"
 						data-aos-duration="1500"
+						src="./shared/img/pudding-lg.jpg"
 					/>
 				</div>
 				<div class="img-composition__item img-composition__item--p4">
 					<img
-						src="../shared/img/inside_2.JPG"
-						data-aos="fade-left"
-						data-aos-duration="1500"
+						srcset="
+							./shared/img/inside_2-lg.JPG  600w,
+							./shared/img/inside_2-sm.JPG 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
 						alt="Inside picture"
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+						src="./shared/img/inside_2-lg.JPG"
 					/>
-				</div>
 			</div>
 		</section>
 
@@ -140,7 +163,7 @@
 			<div class="menu">
 				<h2 class="menu__title heading-secondary">Меню</h2>
 				<div class="menu__picture">
-					<img src="../shared/img/menu.png" alt="Menu" />
+					<img src="./shared/img/menu.png" alt="Menu" />
 				</div>
 			</div>
 		</section>
@@ -183,7 +206,7 @@
 				>
 					<img
 						class="footer__socials-icon"
-						src="../shared/icons/facebook.svg"
+						src="./shared/icons/facebook.svg"
 						alt="Facebook"
 					/>
 				</a>
@@ -192,7 +215,7 @@
 				>
 					<img
 						class="footer__socials-icon"
-						src="../shared/icons/tripadvisor.svg"
+						src="./shared/icons/tripadvisor.svg"
 						alt="Tripadvisor"
 					/>
 				</a>
@@ -200,6 +223,6 @@
 		</footer>
 
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="../js/index.js"></script>
+		<script src="./js/index.js"></script>
 	</body>
 </html>
