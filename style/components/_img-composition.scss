@@ -14,7 +14,7 @@
 			border-radius: .3rem;
 		}
 
-		@include respond(tab-port) {
+		@include respond(phone) {
 			flex: 0 0 100%;
 			margin: 2rem 0;
 		}

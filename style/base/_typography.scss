@@ -3,6 +3,11 @@
 	src: url(../shared/fonts/MYRIADPRO-REGULAR.OTF) format("opentype");
 }
 
+@font-face {
+	font-family: "Kitsune Tail";
+	src: url(../shared/fonts/DKKitsuneTail.ttf);
+}
+
 body {
 	font-family: "Myriad Pro", sans-serif;
 	font-weight: 400;
