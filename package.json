@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/drozds/peko.pl#readme",
   "devDependencies": {
+    "aos": "^2.3.4",
     "node-sass": "^4.12.0",
     "sass": "^1.23.0"
   },
