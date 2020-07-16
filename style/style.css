@@ -101,9 +101,10 @@ html {
     justify-content: center;
     z-index: 100;
     position: absolute;
+    transform-origin: right;
     right: -100%;
-    top: 0;
     transform: scaleX(0);
+    top: 0;
     transition: all 0.5s ease;
     font-size: 3rem;
     display: flex; }
@@ -170,7 +171,7 @@ html {
   border-radius: 50%;
   box-shadow: inset 0 0 0 0.4rem #dcdcdc;
   opacity: 0;
-  transition: .2s;
+  transition: 0.2s;
   transform: translateY(2.5rem); }
   .scroll-up--visible {
     visibility: visible;
@@ -192,8 +193,8 @@ html {
   .scroll-up__svg-path {
     fill: none;
     stroke: orange;
-    stroke-width: .4rem;
-    transition: .2s; }
+    stroke-width: 0.4rem;
+    transition: 0.2s; }
 
 .header {
   height: 95vh;

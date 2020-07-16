@@ -1,4 +1,9 @@
-AOS.init();
+AOS.init({
+	// disable: () => {
+  //   const maxWidth = 940;
+	// 	return window.innerWidth < maxWidth;
+	// },
+});
 const navItems = document.querySelectorAll(".hamburger__navigation-element");
 const selectInput = document.getElementById("hamburger");
 
@@ -18,18 +23,18 @@ scrollUpSvgPath.style.transition = "stoke-dashoffset 20ms";
 
 // update dashhoffset
 const updateDashoffset = () => {
-  const height = document.documentElement.scrollHeight - window.innerHeight
-  const dashoffset = pathLength - (getTop() * pathLength / height)
+	const height = document.documentElement.scrollHeight - window.innerHeight;
+	const dashoffset = pathLength - (getTop() * pathLength) / height;
 
-  scrollUpSvgPath.style.strokeDashoffset = dashoffset;
+	scrollUpSvgPath.style.strokeDashoffset = dashoffset;
 };
 
 const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
 
 //onScroll
 window.addEventListener("scroll", () => {
-  updateDashoffset();
-  
+	updateDashoffset();
+
 	if (getTop() > offset) {
 		scrollUpEl.classList.add("scroll-up--visible");
 	} else {
