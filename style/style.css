@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Myriad Pro";
   src: url(../shared/fonts/MYRIADPRO-REGULAR.OTF) format("opentype"); }
@@ -29,6 +30,14 @@ a {
 .paragraph {
   font-size: 3rem;
   text-align: center; }
+
+@keyframes h1-showing {
+  0% {
+    opacity: 0;
+    top: 55%; }
+  100% {
+    opacity: 1;
+    top: 50%; } }
 
 .u-margin-top-large {
   margin-top: 10rem !important; }
@@ -136,6 +145,56 @@ html {
   #hamburger:checked + label .hamburger__line:before {
     transform: rotate(45deg); }
 
+.switch-languages {
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+  z-index: 9999; }
+  .switch-languages a {
+    display: inline-block; }
+    .switch-languages a:not(:last-child) {
+      margin-right: 1rem; }
+  .switch-languages img {
+    width: 3rem; }
+
+.scroll-up {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 9999;
+  color: #dcdcdc;
+  cursor: pointer;
+  visibility: hidden;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 0.4rem #dcdcdc;
+  opacity: 0;
+  transition: .2s;
+  transform: translateY(2.5rem); }
+  .scroll-up--visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); }
+  .scroll-up::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    content: "↑"; }
+  .scroll-up:hover {
+    color: orange; }
+  .scroll-up__svg-path {
+    fill: none;
+    stroke: orange;
+    stroke-width: .4rem;
+    transition: .2s; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../shared/img/Czajnik.jpg);
@@ -157,7 +216,7 @@ html {
     font-size: 5rem;
     letter-spacing: 0.6rem;
     flex: 0 0 50%;
-    font-family: 'Kitsune Tail', cursive;
+    font-family: "Kitsune Tail", cursive;
     line-height: 1; }
   .header__navigation {
     list-style-type: none;
@@ -176,12 +235,14 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
     letter-spacing: 0.8rem;
-    line-height: 1.3; }
+    line-height: 1.3;
+    animation-fill-mode: forwards;
+    animation: h1-showing 0.5s ease-in-out; }
     .header__title span {
-      font-size: 5.5rem;
-      text-transform: uppercase; }
+      font-size: 5.5rem; }
     @media only screen and (max-width: 75em) {
       .header__title {
         font-size: 4.5rem; }
@@ -252,7 +313,7 @@ html {
   height: 100%;
   width: 100%;
   filter: grayscale(0.5);
-  transition: all .3s; }
+  transition: all 0.3s; }
   .map:hover {
     filter: none; }
 
