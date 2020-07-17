@@ -63,6 +63,12 @@ a {
 .u-margin-top-large {
   margin-top: 10rem !important; }
 
+.u-margin-top-negative-sm {
+  margin-top: -3rem !important; }
+
+.u-margin-top-negative-lg {
+  margin-top: -10rem !important; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -302,7 +308,7 @@ html {
     transition: 0.2s; }
 
 .menu {
-  height: 200rem;
+  height: 195rem;
   width: 95%;
   margin: 0 auto;
   background-color: #fff; }
@@ -338,8 +344,6 @@ html {
     margin-top: 1rem; }
     .dish-composition img {
       transform: scale(1.5); }
-  .dish__desert {
-    height: 5rem; }
 
 .header {
   height: 100vh;
