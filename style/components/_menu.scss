@@ -1,6 +1,6 @@
 .menu {
 	height: 200rem;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 	background-color: $color-white;
 
@@ -8,6 +8,22 @@
 		color: $color-black;
 		&--1 {
 			background-color: $color-yellow-bright;
+		}
+	}
+	&__article {
+		&--1 {
+			border-bottom: 10rem solid $color-yellow-bright;
+		}
+
+		&--2 {
+			background-color: #ffffff;
+			background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 0C6.716 0 0 6.716 0 15c8.284 0 15-6.716 15-15zM0 15c0 8.284 6.716 15 15 15 0-8.284-6.716-15-15-15zm30 0c0-8.284-6.716-15-15-15 0 8.284 6.716 15 15 15zm0 0c0 8.284-6.716 15-15 15 0-8.284 6.716-15 15-15z' fill='%23ffd954' fill-opacity='0.34' fill-rule='evenodd'/%3E%3C/svg%3E");
+			background-position: bottom;
+			background-size: 15%;
+		}
+
+		&--4 {
+			margin-top: -12rem;
 		}
 	}
 }
