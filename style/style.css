@@ -26,7 +26,8 @@ a {
 
 .heading-secondary {
   font-size: 4rem;
-  text-align: center; }
+  text-align: center;
+  line-height: 2.5; }
 
 .heading-tertiary {
   font-size: 3rem;
@@ -39,6 +40,17 @@ a {
   .paragraph-sm {
     font-size: 2rem;
     text-align: center; }
+
+.heading-menu {
+  font-family: "Kitsune Tail", cursive;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+  text-align: center;
+  line-height: 2.2; }
+
+.heading-five {
+  font-size: 2.5rem;
+  font-weight: 600; }
 
 @keyframes h1-showing {
   0% {
@@ -70,6 +82,58 @@ html {
   @media only screen and (max-width: 37.5em) {
     html {
       font-size: 50%; } }
+
+.grid-3-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+
+.col-1-of-3 {
+  grid-column: 1 / 2; }
+
+.col-2-of-3 {
+  grid-column: 2 / 3; }
+
+.col-3-of-3 {
+  grid-column: 3 / 4; }
+
+.row-1-3-of-6 {
+  grid-row: 1 / 4; }
+
+.row-4-6-of-6 {
+  grid-row: 4 / 7; }
+
+.row-1-4-of-6 {
+  grid-row: 1 / 5; }
+
+.row-5-6-of-6 {
+  grid-row: 5 / 7; }
+
+.row-4-of-6 {
+  grid-row: 4 / 5; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+
+.flex-col {
+  display: flex;
+  flex-direction: column; }
+
+.flex-col-2-of-3 {
+  width: 60%;
+  flex: 0 0 60%; }
+
+.flex-stretch {
+  width: 100%;
+  flex: 0 0 100%; }
+
+.flex-col-1-of-3 {
+  width: 33.3%;
+  flex: 0 0 33.3333%; }
+
+.flex-col-grow {
+  flex-grow: 1; }
 
 .img-composition {
   display: flex;
@@ -206,101 +270,31 @@ html {
     transition: 0.2s; }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 auto; }
-  .menu__part {
-    flex: 0 0 40%;
-    display: flex;
-    flex-direction: column; }
-  .menu__item {
-    flex: 0 0 50%; }
-  .menu__card {
-    position: relative;
-    transition: 0.3s;
-    border-radius: 0.5rem;
-    overflow: hidden; }
-    .menu__card:hover .menu__img {
-      transform: scale(1);
-      filter: blur(10px) brightness(0.8); }
-    .menu__card:hover .menu__caption {
-      opacity: 1;
-      transform: translate(-50%, -50%); }
-  .menu__img {
-    height: 30rem;
-    transform: scale(1.2);
-    transition: 0.3s;
-    overflow: hidden; }
-  .menu__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.5rem;
-    color: #fff;
-    transform: translate(-50%, -20%);
-    z-index: 100;
-    opacity: 0;
-    transition: 0.3s;
-    text-align: center; }
-
-.dish__shape {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25rem;
-  height: 25rem;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  background-image: linear-gradient(to bottom right, #f4f5f7, #bbbfc2 90%); }
-  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-    .dish__shape {
-      -webkit-clip-path: circle(50% at 50% 50%);
-      clip-path: circle(50% at 50% 50%);
-      -webkit-shape-outside: circle(50% at 50% 50%);
-      shape-outside: circle(50% at 50% 50%);
-      border-radius: none; } }
-  .dish__shape--left {
-    float: left;
-    margin-right: 3rem; }
-    .dish__shape--left + .dish__text p,
-    .dish__shape--left + .dish__text h3 {
-      text-align: left; }
-  .dish__shape--right {
-    float: right;
-    margin-left: 3rem; }
-    .dish__shape--right + .dish__text p,
-    .dish__shape--right + .dish__text h3 {
-      text-align: right; }
-
-.dish__img {
+  height: 200rem;
   width: 90%;
-  transform: scale(1.2);
-  backface-visibility: hidden;
-  transition: all 0.5s; }
+  margin: 0 auto;
+  background-color: #fff; }
+  .menu__title {
+    color: #000; }
+    .menu__title--1 {
+      background-color: #ffd954; }
 
-.dish__caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 3rem;
-  text-align: left;
-  opacity: 0;
-  transition: all 0.5s;
-  backface-visibility: hidden; }
-
-.dish:hover .dish__caption {
-  opacity: 1;
-  transform: translate(-50%, -50%); }
-
-.dish:hover .dish__img {
-  transform: scale(1);
-  filter: blur(3px) brightness(80%); }
+.dish {
+  padding: 0 1rem; }
+  .dish__img {
+    display: block; }
+  .dish__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .dish--left img {
+    order: -1; }
+  .dish--right img {
+    order: 1; }
+  .dish-composition {
+    margin-top: 1rem; }
+    .dish-composition img {
+      transform: scale(1.5); }
 
 .header {
   height: 100vh;
@@ -401,7 +395,8 @@ html {
       font-size: 2.5rem; } }
 
 .menu-section {
-  background-color: #f6f5f3; }
+  background-color: #f6f5f3;
+  padding-bottom: 5rem; }
 
 .map-section {
   height: 50vh; }

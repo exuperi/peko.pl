@@ -167,84 +167,173 @@
 		</section>
 
 		<!-- MENU SECTION -->
-		<!-- <section id="menu" class="menu-section">
-			<div class="menu">
-				<h2 class="menu__title heading-secondary">Menu</h2>
-				<div class="menu__picture">
-					<img src="./shared/img/menu.png" alt="Menu" />
-				</div>
-			</div>
-		</section> -->
-		
-		<section class="menu-section" id="menu">
-			<h2 class="menu__title heading-secondary">Menu</h2>
-			<div class="menu">
-				<div class="menu__part">
-					<div class="menu__item dish">
-						<figure class="dish__shape dish__shape--left">
-							<img
-								src="./shared/img/menu/karaagedon-sm.png"
-								alt="Oyako-Don"
-								class="dish__img"
-							/>
-							<figcaption class="dish__caption">25/27 zł</figcaption>
-						</figure>
-						<div class="dish__text">
-							<h3 class="heading-tertiary">Oyakodon</h3>
-							<p class="paragraph-sm">
-								Ryż z kawałkami kurczaka duszonymi wraz z jajkiem i cebulą
-							</p>
-						</div>
-					</div>
-					<div class="menu__item dish">
-						<figure class="dish__shape dish__shape--right">
-							<img
-								src="./shared/img/menu/chocopudding-sm.png"
-								alt="Loco-Moco-Don"
-								class="dish__img"
-							/>
-							<figcaption class="dish__caption">31/33 zł</figcaption>
-						</figure>
-						<div class="dish__text">
-							<h3 class="heading-tertiary">Loco Moco Don</h3>
-							<p class="paragraph-sm">
-								Ryż padawany z kotletem z mielonego mięsa wieprzowego z
-								dodatkiem warzyw oraz jajkiem sadzonym polany aromatycznym sosem
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- <figure class="menu__card">
-					<img
-						src="./shared/img/menu/locomocodon.jpg"
-						alt=""
-						class="menu__img"
-					/>
-					<figcaption class="menu__caption">
-						Loco Moco Don
-						<p class="paragraph-sm">
-							Ryż padawany z kotletem z mielonego mięsa wieprzowego z dodatkiem
-							warzyw oraz jajkiem sadzonym polany aromatycznym sosem
-						</p>
-					</figcaption>
-				</figure> -->
-				<!-- <div class="try-menu__card">
-					<div class="try-menu__card--front">
+		<section class="menu-section">
+			<div class="heading-secondary">Menu</div>
+			<div class="menu grid-3-6">
+				<div class="menu__article col-1-of-3 row-1-4-of-6">
+					<h3 class="heading-menu menu__title menu__title--1">Przystawki</h3>
+					<figure class="dish dish--left flex">
 						<img
-							src="./shared/img/menu/locomocodon.jpg"
-							alt=""
-							class="try-menu__img"
+							src="./shared/img/menu/togukaraage-sm.png"
+							alt="Tofu Karaage"
+							class="dish__img flex-col-2-of-3"
 						/>
+						<figcaption class="dish__text flex-col-grow">
+							<div class="dish__title">
+								<h5 class="heading-five dish__name">
+									Tofu karaage
+								</h5>
+								<h5 class="heading-five dish__price">
+									17
+								</h5>
+							</div>
+							<p class="paragraph-xs dish__description">
+								Panierowane i smażone na głębokim tłuszczu kawałki tofu
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="dish dish--right flex">
+						<img
+							src="./shared/img/menu/tonkatsu-sm.png"
+							alt="Tonkatsu"
+							class="dish__img flex-col-2-of-3"
+						/>
+						<figcaption class="dish__text">
+							<div class="dish__title">
+								<h5 class="heading-five dish__name">
+									Tonkatsu
+								</h5>
+								<h5 class="heading-five dish__price">
+									17
+								</h5>
+							</div>
+							<p class="paragraph-xs dish__description">
+								Smażony na głębokim tłuszczu kotlet wieprzowy w panierce panko
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="dish dish--left flex">
+						<img
+							src="./shared/img/menu/tamagoyaki-sm.png"
+							alt="Tamagoyaki"
+							class="dish__img flex-col-2-of-3"
+						/>
+						<figcaption class="dish__text">
+							<div class="dish__title">
+								<h5 class="heading-five dish__name">
+									Tamagoyaki
+								</h5>
+								<h5 class="heading-five dish__price">
+									16
+								</h5>
+							</div>
+							<p class="paragraph-xs dish__description">
+								Japoński rolowany omlet
+							</p>
+						</figcaption>
+					</figure>
+					<figure class="dish dish--right flex">
+						<img
+							src="./shared/img/menu/karaage-sm.png"
+							alt="Karaage"
+							class="dish__img flex-col-2-of-3"
+						/>
+						<figcaption class="dish__text">
+							<div class="dish__title">
+								<h5 class="heading-five dish__name">
+									Karaage
+								</h5>
+								<h5 class="heading-five dish__price">
+									18
+								</h5>
+							</div>
+							<p class="paragraph-xs dish__description">
+								Kawałki kurczaka marynowane w sosie sojowym z dodatkiem imbiru
+								panierowane i smażone na głębokim tłuszczu
+							</p>
+						</figcaption>
+					</figure>
+					<div class="dish-composition flex">
+						<figure class="dish dish--right flex-col flex-col-1-of-3">
+							<img
+								src="./shared/img/menu/kimchi-sm.png"
+								alt="Kimchi"
+								class="dish__img flex-stretch"
+							/>
+							<figcaption class="dish__text flex-col-grow">
+								<div class="dish__title">
+									<h5 class="heading-five dish__name">
+										Kimchi
+									</h5>
+									<h5 class="heading-five dish__price">
+										12
+									</h5>
+								</div>
+								<p class="paragraph-xs dish__description">
+									Ostra kiszona kapusta pekińska
+								</p>
+							</figcaption>
+						</figure>
+						<figure class="dish dish--right flex-col flex-col-1-of-3">
+							<img
+								src="./shared/img/menu/hiyayako-sm.png"
+								alt="Hiyayako"
+								class="dish__img flex-stretch"
+							/>
+							<figcaption class="dish__text flex-col-grow">
+								<div class="dish__title">
+									<h5 class="heading-five dish__name">
+										Hiyayako
+									</h5>
+									<h5 class="heading-five dish__price">
+										14
+									</h5>
+								</div>
+								<p class="paragraph-xs dish__description">
+									Kawałki świeżego tofu podawane z imbirem i sosem sojowym
+								</p>
+							</figcaption>
+						</figure>
+						<figure class="dish dish--right flex-col flex-col-1-of-3">
+							<img
+								src="./shared/img/menu/edamame-sm.png"
+								alt="Edamame"
+								class="dish__img flex-stretch"
+							/>
+							<figcaption class="dish__text flex-col-grow">
+								<div class="dish__title">
+									<h5 class="heading-five dish__name">
+										Edamame
+									</h5>
+									<h5 class="heading-five dish__price">
+										10
+									</h5>
+								</div>
+								<p class="paragraph-xs dish__description">
+									Gotowane i osolone strąki fasolki sojowej
+								</p>
+							</figcaption>
+						</figure>
 					</div>
-					<div class="try-menu__card--back">
-						<div class="heading-secondary">Oyako Don</div>
-						<div class="paragraph-sm">
-							Ryż padawany z kotletem z mielonego mięsa wieprzowego z dodatkiem
-							warzyw oraz jajkiem sadzonym polany aromatycznym sosem
-						</div>
-						<span>25/27 zł</span>
-					</div>
-				</div> -->
+				</div>
+				<div class="menu__article col-1-of-3 row-5-6-of-6">
+					<h3 class="heading-menu menu__title menu__title--2">Zupy</h3>
+				</div>
+				<div class="menu__article col-2-of-3 row-1-3-of-6">
+					<h3 class="heading-menu menu__title menu__title--3">Ryż z curry</h3>
+				</div>
+				<div class="menu__article col-2-of-3 row-4-6-of-6">
+					<h3 class="heading-menu menu__title menu__title--4">Donburi</h3>
+				</div>
+				<div class="menu__article col-3-of-3 row-1-3-of-6">
+					<h3 class="heading-menu menu__title menu__title--5">Donburi</h3>
+				</div>
+				<div class="menu__article col-3-of-3 row-4-of-6">
+					<h3 class="heading-menu menu__title menu__title--6">Desery</h3>
+				</div>
+				<div class="menu__article col-3-of-3 row-5-6-of-6">
+					<h3 class="heading-menu menu__title menu__title--7">Napoje</h3>
+				</div>
 			</div>
 		</section>
 

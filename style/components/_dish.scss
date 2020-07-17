@@ -1,0 +1,41 @@
+.dish {
+	padding: 0 1rem;
+
+	&__img {
+		display: block;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__name {
+	}
+
+	&__price {
+	}
+
+	&__description {
+	}
+
+	&--left {
+		img {
+			order: -1;
+		}
+	}
+
+	&--right {
+		img {
+			order: 1;
+		}
+	}
+
+	&-composition {
+		margin-top: 1rem;
+		img {
+			transform: scale(1.5);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-col-2-of-3 {
+	width: 60%;
+	flex: 0 0 60%;
+}
+
+.flex-stretch {
+	width: 100%;
+	flex: 0 0 100%;
+}
+
+.flex-col-1-of-3 {
+	width: 33.3%;
+	flex: 0 0 33.3333%;
+}
+
+.flex-col-grow {
+	flex-grow: 1;
+}
