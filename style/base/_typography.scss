@@ -22,7 +22,7 @@ a {
 		text-decoration: none;
 		color: inherit;
 	}
-	transition: all .3s;
+	transition: all 0.3s;
 	display: inline-block;
 	backface-visibility: hidden;
 	&:hover {
@@ -32,10 +32,22 @@ a {
 
 .heading-secondary {
 	font-size: 4rem;
+	text-align: center;
+}
 
+.heading-tertiary {
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 2;
 }
 
 .paragraph {
 	font-size: 3rem;
 	text-align: center;
+
+	&-sm {
+		font-size: 2rem;
+
+		text-align: center;
+	}
 }
