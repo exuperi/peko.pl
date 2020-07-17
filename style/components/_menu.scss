@@ -1,8 +1,16 @@
 .menu {
-	height: 195rem;
+	height: $grid-height;
 	width: 95%;
 	margin: 0 auto;
 	background-color: $color-white;
+
+	@include respond(tab-land) {
+		height: 1.5 * $grid-height;
+	}
+
+	@include respond(phone) {
+		height: 3 * $grid-height;
+	}
 
 	&__title {
 		color: $color-black;
