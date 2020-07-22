@@ -1,67 +1,73 @@
 @font-face {
-	font-family: "Myriad Pro";
-	src: url(../shared/fonts/MYRIADPRO-REGULAR.OTF) format("opentype");
+  font-family: "Myriad Pro";
+  src: url(../shared/fonts/MYRIADPRO-REGULAR.OTF) format("opentype");
 }
 
 @font-face {
-	font-family: "Kitsune Tail";
-	src: url(../shared/fonts/DKKitsuneTail.ttf);
+  font-family: "Kitsune Tail";
+  src: url(../shared/fonts/DKKitsuneTail.ttf);
 }
 
 body {
-	font-family: "Myriad Pro", sans-serif;
-	font-weight: 400;
-	font-size: 1.6rem;
-	line-height: 1.7;
-	color: #3d3c39;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #3d3c39;
 }
 
 a {
-	&:link,
-	&:visited {
-		text-decoration: none;
-		color: inherit;
-	}
-	transition: all 0.3s;
-	display: inline-block;
-	backface-visibility: hidden;
-	&:hover {
-		transform: translateY(-2px);
-	}
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  transition: all 0.3s;
+  display: inline-block;
+  backface-visibility: hidden;
+  &:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .heading-secondary {
-	font-size: 4rem;
-	text-align: center;
-	line-height: 2.5;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 2.5;
 }
 
 .heading-tertiary {
-	font-size: 3rem;
-	font-weight: 600;
-	line-height: 2;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2;
 }
 
 .paragraph {
-	font-size: 3rem;
-	text-align: center;
+  font-size: 3rem;
+  text-align: center;
 
-	&-sm {
-		font-size: 2rem;
+  &-sm {
+    font-size: 2rem;
 
-		text-align: center;
-	}
+    text-align: center;
+  }
 }
 
 .heading-menu {
-	font-family: "Kitsune Tail", cursive;
-	font-size: 4rem;
-	letter-spacing: .3rem;
-	text-align: center;
-	line-height: 2.2;
+  font-family: "Kitsune Tail", cursive;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  line-height: 2.2;
 }
 
 .heading-five {
-	font-size: 2.5rem;
-	font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.heading-six {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
 }
