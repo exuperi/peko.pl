@@ -199,9 +199,9 @@ html {
     z-index: 100;
     position: absolute;
     transform-origin: right;
-    right: -100%;
-    transform: scaleX(0);
-    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    top: -100%;
     transition: all 0.5s ease;
     font-size: 3rem;
     display: flex; }
@@ -230,8 +230,8 @@ html {
 #hamburger:checked ~ .hamburger {
   flex: 0 0 50%; }
   #hamburger:checked ~ .hamburger__navigation {
-    right: 0;
-    transform: scaleX(1); }
+    top: 0;
+    transform: scaleY(1); }
   #hamburger:checked ~ .hamburger__navigation-element {
     width: 100%; }
 

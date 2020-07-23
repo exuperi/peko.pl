@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../style/style.css" />
+		<title>Peko Peko - japanese food!</title>
+	</head>
+	<body>
+		<!-- ABSTRACT -->
+		<div class="switch-languages">
+			<a href="../"
+				><img src="../shared/icons/pl.svg" alt="Polish version"
+			/></a>
+			<a href="../ru"
+				><img src="../shared/icons/ru.svg" alt="Russian version"
+			/></a>
+		</div>
+
+		<div class="scroll-up">
+			<svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+				<path
+					class="scroll-up__svg-path"
+					d="
+					M24,0
+					a24,24 0 0,1 0,48
+					a24,24 0 0,1 0,-48
+					"
+				/>
+			</svg>
+		</div>
+
+		<!-- HEADER SECTION-->
+		<header #header class="header">
+			<nav class="header__nav">
+				<div class="header__logo">Peko Peko</div>
+				<ul class="header__navigation">
+					<li class="header__navigation-element">
+						<a href="#about-us">About us</a>
+					</li>
+					<li class="header__navigation-element"><a href="#menu">Menu</a></li>
+					<li class="header__navigation-element">
+						<a href="#footer">Contact</a>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<input type="checkbox" id="hamburger" />
+					<label for="hamburger">
+						<div class="hamburger__line"></div>
+					</label>
+					<ul class="hamburger__navigation">
+						<li class="hamburger__navigation-element">
+							<a href="#about-us">About us</a>
+						</li>
+						<li class="hamburger__navigation-element">
+							<a href="#menu">Menu</a>
+						</li>
+						<li class="hamburger__navigation-element">
+							<a href="#footer">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<h1 class="header__title heading-primary">
+				Japanese cuisine<br /><span>Peko Peko</span>
+			</h1>
+		</header>
+
+		<!-- ABOUIT US SECTION -->
+		<section id="about-us" class="about-us-section">
+			<div class="short-info">
+				<div data-aos="zoom-in" class="short-info__item">
+					<div class="short-info__icon">
+						<img src="../shared/icons/location.svg" alt="Location icon" />
+					</div>
+					<div class="short-info__text">
+						Emilii Plater 13,<br />
+						00-669 Warszawa
+					</div>
+				</div>
+				<div data-aos="zoom-in" class="short-info__item">
+					<div class="short-info__icon">
+						<img src="../shared/icons/phone.svg" alt="Location icon" />
+					</div>
+					<div class="short-info__text">
+						Phone:<br /><a href="tel:+48 572 213 775">+48 572 213 775</a>
+					</div>
+				</div>
+				<div data-aos="zoom-in" class="short-info__item">
+					<div class="short-info__icon">
+						<img src="../shared/icons/clock.svg" alt="Location icon" />
+					</div>
+					<div class="short-info__text">Opened:<br />12:00-21:00</div>
+				</div>
+			</div>
+			<p class="description paragraph u-margin-top-large">
+				"Peko Peko" в дословном переводе с японского языка означает "я голоден".
+				Наш варшавский ресторан является не только прекрасным местом, чтобы
+				уталить голод, а также показать, что японская кухня - это не только суши
+				и рамен. В наших блюдах мы используем японские ингредиенты и следуем
+				оригинальной рецептуре для того, чтобы полностью передать вкусы Страны
+				Восходящего Солнца. (С 2017 года наши Донбури и Карри не оставляют
+				никого равнодушным.)
+			</p>
+			<div class="img-composition u-margin-top-large">
+				<div class="img-composition__item img-composition__item--p1">
+					<img
+						srcset="
+							../shared/img/czajnik-sm.jpg  600w,
+							../shared/img/czajnik-lg.jpg 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
+						alt="Inside picture"
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+						src="../shared/img/czajnik-lg.jpg"
+					/>
+				</div>
+				<div class="img-composition__item img-composition__item--p2">
+					<img
+						srcset="
+							../shared/img/karaage-sm.jpg  600w,
+							../shared/img/karaage-lg.jpg 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
+						alt="Karaage"
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+						src="../shared/img/karaage-lg.jpg"
+					/>
+				</div>
+				<div class="img-composition__item img-composition__item--p3">
+					<img
+						srcset="
+							../shared/img/pudding-sm.jpg  600w,
+							../shared/img/pudding-lg.jpg 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
+						alt="Puddding"
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+						src="../shared/img/pudding-lg.jpg"
+					/>
+				</div>
+				<div class="img-composition__item img-composition__item--p4">
+					<img
+						srcset="
+							../shared/img/inside_2-sm.jpg  600w,
+							../shared/img/inside_2-lg.jpg 1700w
+						"
+						sizes="(max-width: 56.25em) 40vw, (max-width: 37.5em) 90vw, 700px"
+						alt="Inside picture"
+						data-aos="zoom-in"
+						data-aos-duration="1500"
+						src="../shared/img/inside_2-lg.jpg"
+					/>
+			</div>
+		</section>
+
+		<!-- MENU SECTION -->
+		<section id="menu" class="menu-section">
+			<div class="heading-secondary">Menu</div>
+			<div class="menu tabs">
+			  <div class="tabs-trigers flex-wrap">
+				<a
+				  href="#tab-1"
+				  class="tabs-trigers__item heading-menu menu__title menu__title--1"
+				>
+				  Przystawki
+				</a>
+				<a
+				  href="#tab-2"
+				  class="tabs-trigers__item heading-menu menu__title menu__title--2"
+				>
+				  Zupy
+				</a>
+				<a
+				  href="#tab-3"
+				  class="tabs-trigers__item heading-menu menu__title menu__title--3"
+				>
+				  Ryż z curry
+				</a>
+				<a
+				  href="#tab-4"
+				  class="tabs-trigers__item heading-menu menu__title menu__title--4"
+				  >Donburi
+				</a>
+				<a
+				  href="#tab-5"
+				  class="tabs-trigers__item heading-menu menu__title menu__title--5"
+				  >Desery
+				</a>
+				<a
+				  href="#tab-6"
+				  class="tabs-trigers__item heading-menu menu__title menu__title--6"
+				  >Napoje
+				</a>
+			  </div>
+			  <div class="tabs-content">
+				<div
+				  id="tab-1"
+				  class="tabs-content__item menu__article menu__article--1 flex"
+				>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/togukaraage-sm (1).png"
+					  alt="Tofu Karaage"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Tōfu kara-age
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /17zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Panierowane i smażone na głębokim oleju kawałki tofu podawane
+						z sosem sojowo-imbirowym
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/tonkatsu-sm (1).png"
+					  alt="Tonkatsu"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Tonkatsu
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /17zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Smażony na głębokim tłuszczu kotlet wieprzowy w panierce panko
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/tamagoyaki-sm (1).png"
+					  alt="Tamagoyaki"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Tamagoyaki
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /16zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Japoński rolowany omlet
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/karaage-sm (1).png"
+					  alt="Karaage"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Kara-age
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /18zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Kawałki kurczaka marynowane w sosie sojowym z dodatkiem
+						imbiru, panierowane i smażone na głębokim oleju
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/kimchi-sm (1).png"
+					  alt="Kimchi"
+					  class="dish__img flex-stretch"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Kimchi
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /12zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ostra kiszona kapusta pekińska
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/hiyayako-sm (1).png"
+					  alt="Hiyayako"
+					  class="dish__img flex-stretch"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Hiyayakko
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /14zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Tofu podawane na zimno z imbirem, zieloną cebulką i sosem
+						sojowym
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/edamame-sm (1).png"
+					  alt="Edamame"
+					  class="dish__img flex-stretch"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Edamame
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /10zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Gotowane i osolone strąki fasoli sojowej
+					  </p>
+					</figcaption>
+				  </figure>
+				</div>
+				<div
+				  id="tab-2"
+				  class="tabs-content__item menu__article menu__article--2 flex"
+				>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/kareudon-sm (1).png"
+					  alt="Kare Udon"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Karē udon
+						</h5>
+						<h5 class="heading-five dish__price">
+						  27/29zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Gęsta zupa na bazie karē, podawana z pszennym makaronem udon
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/misoshiru-sm (1).png"
+					  alt="Miso-shiru"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Miso-shiru
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /9zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Tradycyjna japońska zupa, przygotowywana na bazie sojowej
+						pasty miso
+					  </p>
+					</figcaption>
+				  </figure>
+				</div>
+				<div
+				  id="tab-3"
+				  class="tabs-content__item menu__article menu__article--3 flex"
+				>
+				  <p class="menu__description paragraph-sm">
+					Karē raisu to curry w stylu japońskim, odmienne od popularnych
+					curry indyjskich czy też tajskich. Swoje powstanie zawdzięcza tak
+					właściwie kuchni brytyjskiej, lecz potrawa ta w Japonii przeszła
+					niezwykłą transformację – stała się gęstsza i zyskała wiele
+					dodatkowych składników. Karē zawsze posiada jakiś rodzaj mięsa,
+					marchew oraz ziemniaki. <br />
+					<i>standardowa porcja/duża porcja</i>
+				  </p>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/kareraisu-sm (1).png"
+					  alt="Kare Raisu"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Peko Peko karē
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /26/28zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Curry z kurczakiem w stylu japońskim
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/katsukare-sm (1).png"
+					  alt="Katsu Kare"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Katsu karē
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /30/32zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Curry z kurczakiem w stylu japońskim, podawane z kotletem
+						wieprzowym w świeżej panierce panko
+					  </p>
+					</figcaption>
+				  </figure>
+				</div>
+				<div
+				  id="tab-4"
+				  class="tabs-content__item menu__article menu__article--4 flex"
+				>
+				  <p class="menu__description paragraph-sm">
+					Donburi to dania podawane na ryżu, niezwykle sycące i smaczne.
+					Istnieje bardzo wiele możliwych kombinacji, a większość znanych
+					japońskich potraw ma swój odpowiednik donburi. <br />
+					<i>standardowa porcja/duża porcja</i>
+				  </p>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/katsudon-sm (1).png"
+					  alt="Katsudon"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Katsudon
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /27/29zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ryż z panierowanym w panko kotletem wieprzowym, jajkiem i
+						cebulą
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/oyakodon-sm (1).png"
+					  alt="Oyakodon"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Oyakodon
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /25/27zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ryż z duszonymi kawałkami kurczaka, jajkiem i cebulą
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/karaagedon-sm (1).png"
+					  alt="Karaage don"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Kara-age don
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /26/28zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ryż podawany z marynowanymi w sosie sojowym i imbirze,
+						panierowanymi kawałkami kurczaka
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/tofukaraagedon-sm (1).png"
+					  alt="Tofu Karaage Don"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Tōfu kara-age don
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /27/29zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ryż podawany z panierowanymi kawałkami tōfu i sosem
+						sojowo-imbirowym
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--left">
+					<img
+					  src="../shared/img/menu/shogayakidon-sm (1).png"
+					  alt="Shogayakidon"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Shōgayaki don
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /25/27zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ryż z kawałkami mięsa wieprzowego smażonymi w marynacie z sosu
+						sojowego i imbiru oraz cebulą
+					  </p>
+					</figcaption>
+				  </figure>
+				  <figure class="dish dish--right">
+					<img
+					  src="../shared/img/menu/locomocodon-sm (1).png"
+					  alt="Loco moco don"
+					  class="dish__img"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Loco moco don
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /31/33zł
+						</h5>
+					  </div>
+					  <p class="paragraph-xs dish__description">
+						Ryż podawany z kotletem z mielonego mięsa wieprzowego, z
+						dodatkiem warzyw oraz jajkiem sadzonym, polany aromatycznym
+						sosem (drugi hamburger: + 8zł)
+					  </p>
+					</figcaption>
+				  </figure>
+				</div>
+				<div
+				  id="tab-5"
+				  class="tabs-content__item menu__article menu__article--5 flex"
+				>
+				  <figure class="dish">
+					<img
+					  src="../shared/img/menu/matchaicelatte-sm (1).png"
+					  alt="Matcha Iced Latte"
+					  class="dish__img dish__desert"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Matcha Iced Latte
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /16zł
+						</h5>
+					  </div>
+					</figcaption>
+				  </figure>
+				  <figure class="dish">
+					<img
+					  src="../shared/img/menu/matchalatte-sm (1).png"
+					  alt="Matcha Latte"
+					  class="dish__img dish__desert"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Matcha Latte
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /14zł
+						</h5>
+					  </div>
+					</figcaption>
+				  </figure>
+				  <figure class="dish">
+					<img
+					  src="../shared/img/menu/matchapudding-sm (1).png"
+					  alt="Matcha pudding"
+					  class="dish__img dish__desert"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Matcha pudding
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /10zł
+						</h5>
+					  </div>
+					</figcaption>
+				  </figure>
+				  <figure class="dish">
+					<img
+					  src="../shared/img/menu/chocopudding-sm (1).png"
+					  alt="Choco pudding"
+					  class="dish__img dish__desert"
+					/>
+					<figcaption class="dish__text">
+					  <div class="dish__title">
+						<h5 class="heading-five dish__name">
+						  Choco pudding
+						</h5>
+						<h5 class="heading-five dish__price">
+						  /10zł
+						</h5>
+					  </div>
+					</figcaption>
+				  </figure>
+				</div>
+				<div
+				  id="tab-6"
+				  class="tabs-content__item menu__article menu__article--6 flex"
+				>
+				  <div class="flex drinks-wrapper">
+					<ul class="drinks drinks--hot">
+					  <h6 class="heading-six">Gorące</h6>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">
+							Herbata z miętą
+						  </h5>
+						  <h5 class="heading-five drinks__price">8</h5>
+						</div>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">Sencha</h5>
+						  <h5 class="heading-five drinks__price">9</h5>
+						</div>
+						<p class="paragraph-xs drinks__description">
+						  Jedna z najpopularniejszych odmian zielonej herbaty
+						</p>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">Hōjicha</div>
+						  <div class="heading-five drinks__price">9</div>
+						</div>
+						<p class="paragraph-xs drinks__description">
+						  Japońska prażona herbata
+						</p>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">Oolong</div>
+						  <div class="heading-five drinks__price">12</div>
+						</div>
+						<p class="paragraph-xs drinks__description">
+						  Napar łączący w sobie właściwości herbat zielonych oraz
+						  czarnych
+						</p>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">Bancha</div>
+						  <div class="heading-five drinks__price">9</div>
+						</div>
+						<p class="paragraph-xs drinks__description">
+						  Delikatny wariant japońskiej zielonej herbaty
+						</p>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">Kukicha</div>
+						  <div class="heading-five drinks__price">10</div>
+						</div>
+						<p class="paragraph-xs drinks__description">
+						  Napar przygotowany nie z liści, a z łodyżek herbaty
+						</p>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">Genmaicha</div>
+						  <div class="heading-five drinks__price">10</div>
+						</div>
+						<p class="paragraph-xs drinks__description">
+						  Zielona herbata z dodatkiem prażonego ryżu
+						</p>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">
+							Herbata jaśminowa
+						  </div>
+						  <div class="heading-five drinks__price">9</div>
+						</div>
+						<p class="paragraph-xs drinks__description"></p>
+					  </li>
+					</ul>
+					<ul class="drinks drinks--cold">
+					  <h6 class="heading-six">Zimne</h6>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">
+							Cola, Cola Zero, Sprite, Fanta
+						  </h5>
+						  <h5 class="heading-five drinks__price">6</h5>
+						</div>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">
+							Sok pomarańczowy/jabłkowy
+						  </h5>
+						  <h5 class="heading-five drinks__price">5</h5>
+						</div>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">
+							Woda niegazowana/gazowana
+						  </h5>
+						  <h5 class="heading-five drinks__price">6</h5>
+						</div>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">
+							Napój aloesowy
+						  </h5>
+						  <h5 class="heading-five drinks__price">8</h5>
+						</div>
+					  </li>
+					  <li class="drinks__item">
+						<div class="drinks__title flex">
+						  <div class="heading-five drinks__name">Kukicha</div>
+						  <div class="heading-five drinks__price">10</div>
+						</div>
+						<div class="drinks__title flex">
+						  <h5 class="heading-five drinks__name">
+							Domowa lemoniada
+						  </h5>
+						  <h5 class="heading-five drinks__price">14</h5>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		<!-- MAP SECTION -->
+		<section class="map-section">
+			<iframe
+				class="map"
+				width="600"
+				height="500"
+				id="gmap_canvas"
+				src="https://maps.google.com/maps?q=warsaw%20emilii%20plater%2013&t=&z=15&ie=UTF8&iwloc=&output=embed"
+				frameborder="0"
+				scrolling="no"
+				marginheight="0"
+				marginwidth="0"
+			></iframe>
+		</section>
+
+		<!-- FOOTER SECTION -->
+		<footer id="footer" class="footer">
+			<div class="footer__title heading-secondary">Contact</div>
+			<div class="footer__contact-info">
+				<a href="tel:+48 572 213 775">+48 572 213 775</a> <br />
+				Emilii Plater 13, 00-669 Warszawa
+			</div>
+			<div class="footer__open-time">
+				Opening hours:<br />
+				Sunday: 12:00-20:00 Monday: Closed<br />
+				Tuesday: 12:00-21:00<br />
+				Wednesday: 12:00-21:00<br />
+				Thursday: 12:00-21:00<br />
+				Friday: 12:00-21:00<br />
+				Saturday: 12:00-21:00<br />
+			</div>
+			<div class="footer__socials">
+				<a
+					href="https://www.facebook.com/pekopekokuchniajaponska/menu/?ref=page_internal"
+				>
+					<img
+						class="footer__socials-icon"
+						src="../shared/icons/facebook.svg"
+						alt="Facebook"
+					/>
+				</a>
+				<a
+					href="https://www.tripadvisor.ru/Restaurant_Review-g274856-d13323452-Reviews-Peko_Peko_Kuchnia_Japonska-Warsaw_Mazovia_Province_Central_Poland.html"
+				>
+					<img
+						class="footer__socials-icon"
+						src="../shared/icons/tripadvisor.svg"
+						alt="Tripadvisor"
+					/>
+				</a>
+			</div>
+		</footer>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>
