@@ -1,0 +1,24 @@
+.tabs {
+  &-trigers {
+    display: flex;
+    justify-content: space-evenly;
+    &__item {
+      padding: 1rem 3rem;
+      &--active {
+        background-color: $color-yellow-bright;
+      }
+    }
+  }
+
+  &-content {
+    &__item {
+      padding-top: 5rem;
+      display: none;
+      &--active {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
+    }
+  }
+}

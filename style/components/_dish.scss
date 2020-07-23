@@ -1,6 +1,7 @@
 .dish {
   padding: 0 1rem;
   margin-bottom: 6rem;
+  flex: 0 0 25%;
 
   position: relative;
   &__img {
@@ -13,31 +14,29 @@
 
   &__title {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
   &__name {
-    position: absolute;
-
-    width: 100%;
-    text-align: center;
   }
 
   &__price {
-    background-color: #ffd81b;
-    border-radius: 50%;
-    position: absolute;
-    top: -1rem;
-    border: 4px solid #ffb100;
-    right: 5rem;
-    z-index: 10;
-    height: 6rem;
-    width: 6rem;
-    display: flex;
-    justify-content: center;
-    color: #000;
-    align-items: center;
+	  font-size: 2rem;
+	  margin-left: 1rem;
+    // background-color: #ffd81b;
+    // border-radius: 50%;
+    // position: absolute;
+    // top: -1rem;
+    // border: 4px solid #ffb100;
+    // right: 5rem;
+    // z-index: 10;
+    // height: 6rem;
+    // width: 6rem;
+    // display: flex;
+    // justify-content: center;
+    // color: #000;
+    // align-items: center;
   }
 
   &__description {
