@@ -297,29 +297,47 @@ html {
   width: 70%;
   margin: 0 auto;
   background-color: #fff; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 75em) {
     .menu {
       width: 90%; } }
   .menu__title {
     color: #000; }
-  .menu__article--1 {
-    order: 1; }
-  .menu__article--2 {
-    order: 4; }
-  .menu__article--3 {
-    order: 5; }
-  .menu__article--4 {
-    order: 2; }
-  .menu__article--5 {
-    order: 3; }
-  .menu__article--6 {
-    order: 6; }
+  .menu__article {
+    padding-bottom: 5rem; }
+    .menu__article--1 {
+      order: 1; }
+    .menu__article--2 {
+      order: 4; }
+    .menu__article--3 {
+      order: 5; }
+    .menu__article--4 {
+      order: 2; }
+    .menu__article--5 {
+      order: 3; }
+    .menu__article--6 {
+      order: 6; }
+  .menu__description {
+    text-align: left;
+    flex: 0 0 100%;
+    padding: 0 5rem;
+    margin: 0 auto; }
+    .menu__description i {
+      text-align: right;
+      width: 100%;
+      display: inline-block; }
 
 .dish {
   padding: 0 1rem;
   margin-bottom: 6rem;
   flex: 0 0 25%;
   position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .dish {
+      flex: 0 0 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    .dish {
+      flex: 0 0 70%;
+      margin: 0 auto; } }
   .dish__img {
     display: block;
     width: 85%;
@@ -339,13 +357,17 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     transform: translate(-50%, -20%);
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
     opacity: 0;
     transition: all 0.3s;
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 2.5rem;
-    text-shadow: 0 0 2px #000; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .dish--left img {
     order: -1; }
   .dish--right img {
@@ -363,7 +385,20 @@ html {
   width: 90%;
   margin: 0 auto;
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  flex: 0 0 45%; }
+  @media only screen and (max-width: 37.5em) {
+    .drinks {
+      flex: 0 0 90%; } }
+  .drinks-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto; }
+  .drinks__item {
+    margin: 1rem 0; }
   .drinks__title {
     display: flex;
     justify-content: space-between; }
@@ -390,7 +425,7 @@ html {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../shared/img/inside_pretty.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../shared/img/inside_pretty-lg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
