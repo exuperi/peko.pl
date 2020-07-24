@@ -1,8 +1,7 @@
 .hamburger {
-	width: 0;
 	opacity: 0;
 	flex: 0 0 0;
-	display: flex;
+	display: none;
 	justify-content: flex-end;
 
 	input {
@@ -11,7 +10,7 @@
 
 	@include respond(tab-port) {
 		opacity: 1;
-		width: 100%;
+		display: flex;
 	}
 
 	&__navigation {

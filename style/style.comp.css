@@ -177,17 +177,16 @@ html {
         margin: 2rem 0; } }
 
 .hamburger {
-  width: 0;
   opacity: 0;
   flex: 0 0 0;
-  display: flex;
+  display: none;
   justify-content: flex-end; }
   .hamburger input {
     display: none; }
   @media only screen and (max-width: 56.25em) {
     .hamburger {
       opacity: 1;
-      width: 100%; } }
+      display: flex; } }
   .hamburger__navigation {
     list-style-type: none;
     background-color: #212121;
@@ -254,6 +253,8 @@ html {
       margin-right: 1rem; }
   .switch-languages img {
     width: 3rem; }
+  .switch-languages__img {
+    width: 4rem; }
 
 .scroll-up {
   position: fixed;
@@ -325,6 +326,8 @@ html {
       text-align: right;
       width: 100%;
       display: inline-block; }
+  .menu__last-order {
+    text-align: center; }
 
 .dish {
   padding: 0 1rem;
@@ -436,24 +439,29 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     text-transform: uppercase;
     color: #fff; }
   .header__logo {
     font-size: 5rem;
     letter-spacing: 0.6rem;
-    flex: 0 0 50%;
     font-family: "Kitsune Tail", cursive;
     line-height: 1; }
   .header__navigation {
     list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex: 0 0 50%;
+    justify-content: space-between;
+    flex: 0 0 55%;
     font-size: 2rem;
-    letter-spacing: 0.35rem; }
+    letter-spacing: 0.15rem; }
+    @media only screen and (max-width: 75em) {
+      .header__navigation {
+        flex: 0 0 70%; } }
+    .header__navigation-element {
+      text-align: center;
+      margin: 0 1rem; }
     @media only screen and (max-width: 56.25em) {
       .header__navigation {
         display: none; } }
@@ -486,6 +494,14 @@ html {
         font-size: 3rem; }
         .header__title span {
           font-size: 3.5rem; } }
+  .header__take-order {
+    border: 1px solid #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s; }
+    .header__take-order:hover {
+      background-color: #fff;
+      color: #000; }
 
 .about-us-section {
   margin-top: 10rem;
@@ -520,6 +536,9 @@ html {
     .description {
       width: 90%;
       font-size: 2.5rem; } }
+  .description__bon-apetit {
+    font-weight: 600;
+    margin: 1rem 0; }
 
 .menu-section {
   background-color: #f6f5f3;
@@ -541,7 +560,8 @@ html {
   flex-direction: column;
   align-items: center;
   background-color: #212121;
-  color: #e4e4e4; }
+  color: #e4e4e4;
+  padding-bottom: 2rem; }
   .footer__title {
     font-size: 5rem;
     margin: 1.7rem 0; }

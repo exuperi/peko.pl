@@ -16,14 +16,14 @@
     <title>Peko Peko - restauracja japońskiej kuchni!</title>
   </head>
   <body>
-    <div class="switch-languages">
+    <!-- <div class="switch-languages">
       <a href="en/"
         ><img src="./shared/icons/uk.svg" alt="English version"
       /></a>
       <a href="ru/"
         ><img src="./shared/icons/ru.svg" alt="Russian version"
       /></a>
-    </div>
+    </div> -->
 
     <div class="scroll-up">
       <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
@@ -45,9 +45,36 @@
           <li class="header__navigation-element">
             <a href="#about-us">O restauracji</a>
           </li>
-          <li class="header__navigation-element"><a href="#menu">Menu</a></li>
+          <li class="header__navigation-element">
+            <a href="#menu">Menu</a>
+          </li>
           <li class="header__navigation-element">
             <a href="#footer">Kontakt</a>
+          </li>
+
+          <li class="header__navigation-element">
+            <a
+              href="https://www.ubereats.com/pl/warsaw/food-delivery/peko-peko/NW8gj4F7Tl2iA5x-U1KRxg"
+              class="header__take-order"
+              >Złóż zamówienie</a
+            >
+          </li>
+          <li class="header__navigation-element">
+            <a href="en/"
+              ><img
+                class="switch-languages__img"
+                src="./shared/icons/uk.svg"
+                alt="English version"
+            /></a>
+          </li>
+          <li class="header__navigation-element">
+            <a href="ru/">
+              <img
+                src="./shared/icons/ru.svg"
+                class="switch-languages__img"
+                alt="Russian version"
+              />
+            </a>
           </li>
         </ul>
         <div class="hamburger">
@@ -64,6 +91,30 @@
             </li>
             <li class="hamburger__navigation-element">
               <a href="#footer">Kontakt</a>
+            </li>
+            <li class="hamburger__navigation-element">
+              <a
+                href="https://www.ubereats.com/pl/warsaw/food-delivery/peko-peko/NW8gj4F7Tl2iA5x-U1KRxg"
+                class="header__take-order"
+                >Złóż zamówienie</a
+              >
+            </li>
+            <li class="hamburger__navigation-element">
+              <a href="en/"
+                ><img
+                  class="switch-languages__img"
+                  src="./shared/icons/uk.svg"
+                  alt="English version"
+              /></a>
+            </li>
+            <li class="hamburger__navigation-element">
+              <a href="ru/">
+                <img
+                  src="./shared/icons/ru.svg"
+                  class="switch-languages__img"
+                  alt="Russian version"
+                />
+              </a>
             </li>
           </ul>
         </div>
@@ -111,8 +162,8 @@
         popularnością i jestem pewien, że zasmakują też Państwu. Mam nadzieję,
         że czas spędzony w mojej restauracji będzie dla Państwa zarówno
         przyjemny, jak i smakowity!<br />
-        Smacznego! <br />
-        Meshiagare!
+        <span class="description__bon-apetit">Smacznego!</span> <br />
+        <span class="description__bon-apetit">Meshiagare!</span>
       </p>
       <div class="img-composition u-margin-top-large">
         <div class="img-composition__item img-composition__item--p1">
@@ -800,6 +851,9 @@
           </div>
         </div>
       </div>
+      <h3 class="heading-tertiary menu__last-order">
+        Ostatnie zamówienie: 30 minut przed zamknięciem
+      </h3>
     </section>
 
     <!-- MAP SECTION -->
@@ -853,10 +907,19 @@
             alt="Tripadvisor"
           />
         </a>
+        <a
+          href="https://www.ubereats.com/pl/warsaw/food-delivery/peko-peko/NW8gj4F7Tl2iA5x-U1KRxg"
+        >
+          <img
+            class="footer__socials-icon"
+            src="./shared/icons/uber-eats.svg"
+            alt="Uber Eats"
+          />
+        </a>
       </div>
       <p class="footer__license">
         Created by <a href="https://ccoders.pl">Creative Coders</a> | All rights
-        reserved
+        reserved &#169;
       </p>
     </footer>
 
